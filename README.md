@@ -1,6 +1,7 @@
 ## Introduction
-
 SDR++ DAB radio plugin.
+
+![Screenshot](docs/plugin_screenshot.png)
 
 Core algorithms for DAB radio are used from https://github.com/FiendChain/DAB-Radio.
 
