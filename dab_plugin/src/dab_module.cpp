@@ -143,9 +143,12 @@ void DABModule::postInit() {}
 void DABModule::enable() { 
     is_enabled = true; 
     if (!vfo) {
+        // NOTE: Use the entire 2.048e6 frequency range so that if we have a large
+        //       frequency offset the VFO doesn't low pass filter out subcarriers
+        const float MIN_BANDWIDTH = 2.048e6f;
         vfo = sigpath::vfoManager.createVFO(
             name, ImGui::WaterfallVFO::REF_CENTER,
-            0, 1.536e6, 2.048e6, 1.536e6, 1.536e6, true);
+            0, MIN_BANDWIDTH, MIN_BANDWIDTH, MIN_BANDWIDTH, MIN_BANDWIDTH, true);
         decoder_sink->setInput(vfo->output);
         decoder_sink->start();
     }
