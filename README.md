@@ -37,3 +37,9 @@ Built on Windows 10 with Visual Studio 2022.
 6. Copy <code>dab_plugin.dll</code> from <code>build/dab_plugin/Release/dab_plugin.dll</code>.
 7. Paste <code>dab_plugin.dll</code> into <code>modules/</code> folder inside your SDR++ install.
 
+## TODO
+- Improve the user interface so that you can view as much information as the original GUI found at https://github.com/FiendChain/DAB-Radio.
+- Improve integration with SDR++.
+- Add support for crossplatform build system.
+    - DAB code uses intrinsics for x86 architecture which needs to be made multiplatform
+
