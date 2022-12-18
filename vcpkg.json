@@ -12,10 +12,6 @@
       "version>=": "0.0#9"
     },
     {
-      "name": "portaudio",
-      "version>=": "19.7"
-    },
-    {
       "name": "fftw3",
       "version>=": "3.3.10#3",
       "features": ["avx2"]
