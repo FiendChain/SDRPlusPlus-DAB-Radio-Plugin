@@ -1,5 +1,7 @@
 ## Introduction
-SDR++ DAB radio plugin.
+SDR++ DAB radio plugin. 
+
+NOTE: The release build was compiled against a nightly SDR++ build.
 
 ![Screenshot](docs/plugin_screenshot.png)
 
